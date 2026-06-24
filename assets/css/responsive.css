@@ -1,0 +1,504 @@
+/* ============================================
+   NexaFlow AI - Responsive Styles
+   ============================================ */
+
+/* ----- Large Desktop (1400px +) ----- */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+/* ----- Desktop (1200px - 1399px) ----- */
+@media (max-width: 1399px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .dashboard-body {
+    padding: 16px;
+  }
+}
+
+/* ----- Laptop (992px - 1199px) ----- */
+@media (max-width: 1199px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .dashboard-body {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .values-grid,
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .pricing-card.featured {
+    transform: scale(1.02);
+  }
+}
+
+/* ----- Tablet (768px - 991px) ----- */
+@media (max-width: 991px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: rgba(11, 16, 32, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 100px 40px 40px;
+    gap: 8px;
+    transition: right 0.3s ease;
+    border-left: 1px solid var(--border);
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    right: 0;
+  }
+
+  .navbar-links a {
+    padding: 12px 0;
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .navbar-links a::after {
+    display: none;
+  }
+
+  .theme-toggle {
+    display: none;
+  }
+
+  .navbar-links .navbar-cta {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-links .navbar-cta:hover {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(0, 229, 255, 0.3);
+  }
+
+  .navbar-links .navbar-cta::after {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-visual {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-stats {
+    gap: 24px;
+  }
+
+  /* Hide on tablet */
+  .hero .floating-element {
+    display: none;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-detail-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-carousel {
+    gap: 32px;
+  }
+}
+
+/* ----- Mobile (576px - 767px) ----- */
+@media (max-width: 767px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .page-hero {
+    padding: 110px 0 50px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat-number {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .case-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .case-filter {
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    padding: 8px 18px;
+  }
+
+  .case-card-image {
+    height: 160px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .modal-content {
+    padding: 24px;
+  }
+
+  .modal-results {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-chart {
+    padding: 20px;
+  }
+
+  .logo-carousel {
+    gap: 24px;
+  }
+
+  .logo-item {
+    font-size: 0.9rem;
+  }
+
+  .service-detail-card {
+    padding: 24px;
+  }
+
+  .story-stat h4 {
+    font-size: 1.5rem;
+  }
+
+  .about-story-visual {
+    padding: 20px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+  }
+
+  .social-link-large {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ----- Small Mobile (375px - 575px) ----- */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-body {
+    padding: 12px;
+  }
+
+  .dashboard-card {
+    padding: 12px;
+  }
+
+  .pricing-card {
+    padding: 28px 20px;
+  }
+
+  .pricing-card .price {
+    font-size: 2.4rem;
+  }
+
+  .case-card-body {
+    padding: 20px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 0.95rem;
+  }
+
+  .contact-form h3 {
+    font-size: 1.2rem;
+  }
+
+  .map-placeholder {
+    height: 200px;
+  }
+
+  .team-card-image {
+    height: 140px;
+    font-size: 2rem;
+  }
+
+  .service-detail-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-links-large {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar-logo .logo-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ----- Extra Small (below 375px) ----- */
+@media (max-width: 374px) {
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* ----- Print Styles ----- */
+@media print {
+  .navbar,
+  .floating-elements,
+  .mouse-glow,
+  .cta-section,
+  .testimonial-controls,
+  .mobile-toggle {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 30px 0;
+    page-break-inside: avoid;
+  }
+}
